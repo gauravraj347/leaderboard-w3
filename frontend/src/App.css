@@ -1,0 +1,143 @@
+body {
+  background: #f7f8fa;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 900px;
+  margin: 30px auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px 0 rgba(0,0,0,0.08);
+  padding: 32px;
+}
+
+h1 {
+  text-align: center;
+  color: #2b2b2b;
+}
+
+.controls {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.add-user-form input {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-right: 8px;
+}
+.add-user-form button {
+  padding: 6px 16px;
+  border-radius: 6px;
+  border: none;
+  background: #4f8cff;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+}
+.add-user-form .error {
+  color: #e74c3c;
+  margin-left: 8px;
+  font-size: 0.9em;
+}
+
+.claim-btn {
+  background: #43b581;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 20px;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.claim-btn:hover {
+  background: #36996b;
+}
+
+.leaderboard {
+  margin: 32px 0 24px 0;
+}
+.leaderboard table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 8px;
+}
+.leaderboard th, .leaderboard td {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  text-align: center;
+}
+.leaderboard th {
+  background: #f2f4f8;
+  color: #333;
+}
+
+.last-claim {
+  background: #eaf8e6;
+  color: #317a3e;
+  padding: 10px 16px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 1.1em;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.claim-history {
+  margin-top: 32px;
+}
+.claim-history table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.claim-history th, .claim-history td {
+  padding: 8px;
+  border-bottom: 1px solid #eee;
+  text-align: center;
+}
+.claim-history th {
+  background: #f6f6f6;
+  color: #444;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+.pagination button {
+  padding: 4px 12px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background: #f6f6f6;
+  cursor: pointer;
+}
+.pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+  .controls {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .leaderboard th, .leaderboard td, .claim-history th, .claim-history td {
+    font-size: 0.95em;
+    padding: 6px;
+  }
+}
